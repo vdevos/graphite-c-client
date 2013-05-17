@@ -59,7 +59,7 @@ void graphite_send(const char *message)
     }
 }
 
-void graphite_send_plain( const char* path, size_t value, unsigned long timestamp )
+void graphite_send_plain( const char* path, float value, unsigned long timestamp )
 {
     char spath[MAX_MSG_PATH];
     char message[MAX_MSG_LEN_PLAIN]; /* size = path + (value + timestamp) */
@@ -68,7 +68,7 @@ void graphite_send_plain( const char* path, size_t value, unsigned long timestam
     snprintf( spath, MAX_MSG_PATH, "%s", path);     
     
     /* format message as: <metric path> <metric value> <metric timestamp> */
-    snprintf( message, MAX_MSG_LEN_PLAIN, "%s %zd %lu\n", spath, value, timestamp );
+    snprintf( message, MAX_MSG_LEN_PLAIN, "%s %.2f %lu\n", spath, value, timestamp );
     
     /* send to message to graphite */
     graphite_send(message);

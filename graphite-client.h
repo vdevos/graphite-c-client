@@ -18,6 +18,6 @@ void graphite_finalize( void );
 
   WARNING: Make sure you use graphite_init on port: 2003 (only this port allows the plaintext protocol)
 */
-void graphite_send_plain( const char* path, size_t value, unsigned long timestamp );
+void graphite_send_plain( const char* path, float value, unsigned long timestamp );
 
 #endif
