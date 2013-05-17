@@ -1,4 +1,4 @@
-C-Graphite-Client
+Graphite-C-Client
 =================
 
-This pure C Graphite client allows you to send metrics to Graphite/Carbon
+This pure C Graphite client allows you to send metrics to Graphite/Carbon using a socket connection.
