@@ -1,7 +1,7 @@
 Graphite-C-Client
 =================
 
-This trivial pure C Graphite client allows you to send metrics to Graphite -using `socket(7)`
+This trivial pure C Graphite client allows you to send metrics to Graphite using [socket(7)](http://linux.die.net/man/7/socket)
 
 ## Usage
 
