@@ -14,7 +14,7 @@ void graphite_finalize( void );
   This function allows you to send metrics to Graphite/Carbon using the plaintext protocol
   @param path       this is the metric path - example: server.process.task.load, server.process.task.count, etc.
   @param value      this is the metric value - example: 1, 12.4, 113.0, etc.
-  @param timestamp  this is your metrics timestamp (UNIX Epoch) - Warning: if ( timestamp == 0 ) => current time will be used!
+  @param timestamp  this is your metrics timestamp (UNIX Epoch) - Warning: if ( timestamp == 0 ) then current time will be used!
 
   WARNING: Make sure you use graphite_init on port: 2003 (only this port allows the plaintext protocol)
 */
