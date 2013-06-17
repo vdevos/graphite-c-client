@@ -44,7 +44,8 @@ int graphite_init(const char *host, int port)
 
 void graphite_finalize()
 {
-    if (sockfd != -1) {
+    if (sockfd != -1) 
+    {
         close(sockfd);
         sockfd = -1;
     }
