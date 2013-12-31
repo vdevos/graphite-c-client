@@ -32,7 +32,4 @@ from `client.c`
 ### Manual
     
     gcc -g -Wall -o graphite-client.o -c graphite-client.c
-    gcc -g -Wall -o lifo main.c lifo.o  
-  
-
     
